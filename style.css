@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bg2.jpg");
+}
+@keyframes ani {
+    from{
+        background-color: black;
+        color: aqua;
+    }
+    to{
+        background-color: aqua;
+        color: black;
+    }
+}
+.boxcontant{
+    display: inline-flex;
+    border: 5px solid black;
+}
+.navbar{
+    animation: ani 3s linear 1s infinite alternate-reverse;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    ul,li,h4{
+        display: inline-block;
+        margin: 30px;
+        font-size: x-large;
+    }
+    ul{
+        margin-left: 40%;
+    }
+    li:hover{
+        cursor: pointer;
+    }
+}
+.box{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 200px;
+    img{
+    width: 200px;
+    }
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 5%;
+    scale: .50;
+    rotate: 0deg;
+    transition: 1s;
+}
+.box:hover{
+    scale: 1;
+    rotate: 360deg;
+}
+.foot{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    width: 100%;
+}
